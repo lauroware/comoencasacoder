@@ -43,9 +43,16 @@ function Tarjetas() {
   };
 
   const cardBodyStyle = {
-    overflow: "auto",
     maxHeight: "200px",
     paddingRight: "15px",
+    overflow: "hidden",
+  };
+
+  const cardTextContainerStyle = {
+    overflowY: "auto",
+    maxHeight: "100%",
+    paddingRight: "15px",
+    boxSizing: "content-box",
   };
 
   return (
@@ -59,9 +66,12 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Pedidos</Card.Title>
-          <Card.Text style={bodyStyle}>
-            Escribinos por nuestras redes para cotización y realizar tu pedido.
-          </Card.Text>
+          <div style={cardTextContainerStyle}>
+            <Card.Text style={bodyStyle}>
+              Escribinos por nuestras redes para cotización y realizar tu
+              pedido.
+            </Card.Text>
+          </div>
         </Card.Body>
       </Card>
 
@@ -74,10 +84,12 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Envíos</Card.Title>
-          <Card.Text style={bodyStyle}>
-            Realizamos envíos a zona norte: Beccar, San Isidro, Martínez (sin
-            cargo)
-          </Card.Text>
+          <div style={cardTextContainerStyle}>
+            <Card.Text style={bodyStyle}>
+              Realizamos envíos a zona norte: Beccar, San Isidro, Martínez (sin
+              cargo)
+            </Card.Text>
+          </div>
         </Card.Body>
       </Card>
 
@@ -90,10 +102,12 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Retiros</Card.Title>
-          <Card.Text style={bodyStyle}>
-            Una vez realizado el pedido, te enviaremos información para el
-            retiro de tu compra.
-          </Card.Text>
+          <div style={cardTextContainerStyle}>
+            <Card.Text style={bodyStyle}>
+              Una vez realizado el pedido, te enviaremos información para el
+              retiro de tu compra.
+            </Card.Text>
+          </div>
         </Card.Body>
       </Card>
     </div>
