@@ -1,0 +1,43 @@
+/* src/styles/tarjetas.css */
+
+.container-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Añade alineación vertical */
+  flex-wrap: wrap;
+  margin: 0 35px;
+  position: relative;
+}
+
+.card-style {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-style .card-img-top {
+  object-fit: contain; /* Ajusta el tamaño de la imagen sin distorsionarla */
+}
+
+.title-style {
+  color: #4f2d24;
+  font-family: Futura-Bold, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.body-style {
+  color: black;
+  font-family: Futura-Medium, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.image-style {
+  width: 251px;
+  height: auto;
+  margin-bottom: 10px;
+}

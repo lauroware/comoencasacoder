@@ -1,0 +1,66 @@
+/* src/styles/header.css */
+
+#header-logo {
+  margin-left: 60px;
+  margin-right: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 400px;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#header-title {
+  font-family: Futura, sans-serif;
+  color: white;
+  background-color: #1eaeac;
+  font-size: 15px;
+  border-radius: 10px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  padding: 15px;
+  width: 96%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#header-title div {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para pantallas de 800 píxeles o menos */
+@media (max-width: 800px) {
+  #header-logo {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header-title {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Cambiar dirección del flujo de los elementos */
+  #header-title,
+  #header-logo {
+    order: 2;
+  }
+}
+
+/* Estilos para pantallas de 405 píxeles o menos */
+@media (max-width: 405px) {
+  #header-title {
+    margin-right: 20px;
+    width: 90%;
+    margin-left: 5%;
+  }
+}
