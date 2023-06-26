@@ -25,9 +25,6 @@
   padding: 15px;
   width: 96%;
   transition: opacity 0.3s ease-in-out;
-  white-space: nowrap; /* Evita el desbordamiento horizontal */
-  overflow: hidden; /* Oculta cualquier contenido desbordado */
-  text-overflow: ellipsis; /* Muestra puntos suspensivos para el texto desbordado */
 }
 
 #header-title div {

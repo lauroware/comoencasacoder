@@ -19,6 +19,7 @@ function Tarjetas() {
     margin: "10px",
     borderRadius: "10px",
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+    height: "400px", // Ajustar la altura de las tarjetas
   };
 
   const titleStyle = {
@@ -34,6 +35,9 @@ function Tarjetas() {
     fontFamily: "Futura-Medium, sans-serif",
     fontSize: "20px",
     textAlign: "center",
+    overflow: "hidden",
+    maxHeight: "none",
+    paddingRight: "15px",
   };
 
   const imageStyle = {
@@ -43,16 +47,8 @@ function Tarjetas() {
   };
 
   const cardBodyStyle = {
-    maxHeight: "200px",
-    paddingRight: "15px",
     overflow: "hidden",
-  };
-
-  const cardTextContainerStyle = {
-    overflowY: "auto",
-    maxHeight: "100%",
     paddingRight: "15px",
-    boxSizing: "content-box",
   };
 
   return (
@@ -66,12 +62,9 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Pedidos</Card.Title>
-          <div style={cardTextContainerStyle}>
-            <Card.Text style={bodyStyle}>
-              Escribinos por nuestras redes para cotización y realizar tu
-              pedido.
-            </Card.Text>
-          </div>
+          <Card.Text style={bodyStyle}>
+            Escribinos por nuestras redes para cotización y realizar tu pedido.
+          </Card.Text>
         </Card.Body>
       </Card>
 
@@ -84,12 +77,10 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Envíos</Card.Title>
-          <div style={cardTextContainerStyle}>
-            <Card.Text style={bodyStyle}>
-              Realizamos envíos a zona norte: Beccar, San Isidro, Martínez (sin
-              cargo)
-            </Card.Text>
-          </div>
+          <Card.Text style={bodyStyle}>
+            Realizamos envíos a zona norte: Beccar, San Isidro, Martínez (sin
+            cargo)
+          </Card.Text>
         </Card.Body>
       </Card>
 
@@ -102,12 +93,10 @@ function Tarjetas() {
         />
         <Card.Body style={cardBodyStyle}>
           <Card.Title style={titleStyle}>Retiros</Card.Title>
-          <div style={cardTextContainerStyle}>
-            <Card.Text style={bodyStyle}>
-              Una vez realizado el pedido, te enviaremos información para el
-              retiro de tu compra.
-            </Card.Text>
-          </div>
+          <Card.Text style={bodyStyle}>
+            Una vez realizado el pedido, te enviaremos información para el
+            retiro de tu compra.
+          </Card.Text>
         </Card.Body>
       </Card>
     </div>
